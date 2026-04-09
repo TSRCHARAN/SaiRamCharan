@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import { About, Experience, Education, Skills, Projects, Certifications, Achievements, Contact, Footer } from "../components/Sections";
+import { About, Experience, Education, Skills, Projects, Achievements, Contact, Footer } from "../components/Sections";
 
 export default function Home() {
   const { hash } = useLocation();
@@ -30,7 +30,6 @@ export default function Home() {
         <Education />
         <Skills />
         <Projects />
-        <Certifications />
         <Achievements />
         <Contact />
       </main>

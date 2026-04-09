@@ -16,8 +16,13 @@ export const EXPERIENCES = [
     company: "Digital Trust Technologies",
     role: "Software Engineer – AI & Backend",
     period: "Feb 2023 – Present",
-    description: "Designed and developed scalable backend systems using ASP.NET Core and FastAPI for API orchestration and AI-driven workflows. Built and evolved LLM-powered chatbot systems into RAG-based pipelines using semantic and hierarchical chunking. Improved retrieval accuracy using HyDE and enhanced context handling using conversational memory techniques.",
-    skills: ["FastAPI", "ASP.NET Core", "RAG", "LLMs", "Redis", "OAuth"],
+    description: `– Designed and developed scalable backend systems using ASP.NET Core and FastAPI for API orchestration and AI-driven workflows.
+– Built and evolved LLM-powered chatbot systems into RAG-based pipelines using semantic and hierarchical chunking to improve response relevance.
+– Improved retrieval accuracy using HyDE and enhanced context handling using conversational memory techniques such as sliding window and summarization.
+– Integrated backend APIs as structured tools (MCP-like approach) to enable agentic AI workflows for onboarding, validation, and task automation.
+– Developed voice-enabled AI interactions using Sarvam AI and improved system performance using Redis caching and efficient API design.
+– Built secure APIs with OAuth/OpenID Connect and implemented microservice monitoring systems to improve reliability and incident response.`,
+    skills: ["FastAPI", "ASP.NET Core", "RAG", "Agentic AI", "Redis", "OAuth", "Sarvam AI"],
   },
 ];
 
@@ -26,39 +31,56 @@ export const EDUCATION = [
     school: "BITS Pilani – WILP",
     degree: "M.Tech – Artificial Intelligence & Machine Learning",
     period: "2025 – Present",
+  },
+  {
+    school: "SRKR Engineering College",
+    degree: "B.Tech – Artificial Intelligence & Data Science",
+    period: "2020 – 2024",
   }
 ];
 
 export const PROJECTS = [
   {
+    title: "Handwritten Calculator",
+    description: "An AI-powered calculator that recognizes and solves mathematical expressions from handwritten input using computer vision and deep learning.",
+    tech: ["Python", "TensorFlow", "OpenCV", "React Native"],
+    link: "#",
+    image: "https://picsum.photos/seed/handwritten-calc/800/600",
+  },
+  {
     title: "S.AI – Conversational AI with Long-Term Memory",
     description: "Architected a conversational AI system with long-term memory using summarization-based context retention. Designed a FastAPI orchestration layer handling prompt routing and token optimization.",
     tech: ["FastAPI", "LLM APIs", "Backend Systems"],
     link: "#",
-    image: "https://picsum.photos/seed/sai-ai/800/600",
+    image: "https://picsum.photos/seed/conversational-ai/800/600",
   },
   {
     title: "GitHub Repository RAG System",
     description: "Developed a RAG system for natural language querying over code repositories. Parsed repository files and applied semantic chunking while preserving code structure.",
     tech: ["FastAPI", "LLM APIs", "Vector DB"],
     link: "#",
-    image: "https://picsum.photos/seed/github-rag/800/600",
+    image: "https://picsum.photos/seed/code-rag/800/600",
   },
   {
     title: "YouTube Video RAG System",
     description: "Built a RAG system for question-answering over YouTube videos using transcript extraction. Handled long-form content using chunking and token optimization.",
     tech: ["FastAPI", "LLM APIs", "Vector DB"],
     link: "#",
-    image: "https://picsum.photos/seed/youtube-rag/800/600",
+    image: "https://picsum.photos/seed/video-rag/800/600",
   },
 ];
 
 export const SKILLS = [
   { category: "Languages", items: ["Python", "C#", "SQL", "JavaScript", "TypeScript"] },
-  { category: "Generative AI", items: ["LLM APIs", "RAG", "Prompt Engineering", "HyDE", "Semantic Chunking", "Conversational Memory"] },
+  { category: "Generative AI", items: ["LLM APIs (OpenAI, Gemini, Groq, Ollama)", "RAG", "Prompt Engineering", "HyDE", "Semantic Chunking", "Hierarchical Chunking", "Conversational Memory", "Token Optimization"] },
   { category: "Agentic AI", items: ["Tool Calling", "MCP-like Integration", "Workflow Automation"] },
-  { category: "Backend", items: ["FastAPI", "ASP.NET Core", "Node.js", "REST APIs"] },
-  { category: "AI Infrastructure", items: ["Vector Databases", "Embeddings", "Similarity Search"] },
+  { category: "ML / NLP", items: ["Scikit-learn", "TensorFlow", "NLP Pipelines", "Intent Classification", "Model Evaluation"] },
+  { category: "AI Infrastructure", items: ["Vector Databases", "Embeddings", "Similarity Search", "Streaming Inference"] },
+  { category: "Backend", items: ["FastAPI", "ASP.NET Core", "Node.js", "REST APIs", "API Orchestration"] },
+  { category: "Frameworks", items: ["NumPy", "Pandas", "Matplotlib", "React Native"] },
+  { category: "Tools", items: ["Git", "GitHub", "Jupyter", "VS Code", "Postman", "Data Structure & Algorithms"] },
+  { category: "Cloud & DevOps", items: ["Azure", "Docker", "Github Actions"] },
+  { category: "Database", items: ["SQL", "PostgreSQL", "Redis", "MongoDB"] },
 ];
 
 export const CERTIFICATIONS = [
