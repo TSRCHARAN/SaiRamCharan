@@ -29,7 +29,7 @@ export default function BlogPost() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100">
+    <div className="min-h-screen">
       <Navbar />
       <main className="pt-32 pb-24 px-6 max-w-3xl mx-auto">
         <motion.div
@@ -52,7 +52,7 @@ export default function BlogPost() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-8 glow-text leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-8 glow-text leading-tight">
             {blog.title}
           </h1>
 

@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { MessageSquare, X, Send, Bot, User, Loader2 } from "lucide-react";
 import { GoogleGenAI } from "@google/genai";
-import { PROFILE, EXPERIENCES, EDUCATION, PROJECTS, SKILLS, ACHIEVEMENTS, CERTIFICATIONS, BLOGS } from "../constants";
+import { PROFILE, EXPERIENCES, EDUCATION, PROJECTS, SKILLS, ACHIEVEMENTS, CERTIFICATIONS, BLOGS, LEADERSHIP } from "../constants";
 
 // Initialize Gemini API
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
@@ -25,14 +25,16 @@ YOUR BACKGROUND:
 - Education: ${JSON.stringify(EDUCATION)}
 - Projects: ${JSON.stringify(PROJECTS)}
 - Achievements: ${JSON.stringify(ACHIEVEMENTS)}
+- Leadership & Entrepreneurship: ${JSON.stringify(LEADERSHIP)}
 - Blogs: ${JSON.stringify(BLOGS)}
 
 TECHNICAL DEEP-DIVE (Proactively mention these if relevant):
 - RAG: Mention my work with HyDE, Semantic Chunking, and Hierarchical Chunking.
-- Agentic AI: Talk about my "MCP-like" approach to integrating backend APIs as structured tools for LLMs.
+- Agentic AI: Talk about my "MCP-like" approach to integrating backend APIs as structured tools for LLMs, and my use of n8n for workflow automation.
 - Memory: Explain how I use conversational memory techniques like sliding windows and summarization.
-- Voice AI: Mention my experience with Sarvam AI for voice-enabled interactions.
-- Infrastructure: Mention my use of Redis for caching and Vector Databases for similarity search.
+- Voice AI: Mention my experience with voice-enabled AI interactions and system performance tuning.
+- Entrepreneurship: Mention that I co-founded Z444, an EdTech platform where I built goal-driven learning paths.
+- Infrastructure: Mention my use of Redis for caching and Vector Databases (FAISS) for similarity search.
 
 GUIDELINES:
 1. Be professional, technical, and confident.
@@ -99,14 +101,14 @@ export default function Chatbot() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-[100]">
+    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-[100]">
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="glass mb-4 w-[350px] md:w-[400px] h-[500px] rounded-2xl flex flex-col overflow-hidden shadow-2xl border-brand-500/30"
+            className="glass mb-4 w-[calc(100vw-32px)] md:w-[400px] h-[500px] rounded-2xl flex flex-col overflow-hidden shadow-2xl border-brand-500/30"
           >
             {/* Header */}
             <div className="p-4 border-b border-white/10 flex items-center justify-between bg-zinc-900/50 backdrop-blur-xl">
@@ -118,7 +120,7 @@ export default function Chatbot() {
                   <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-green-500 border-2 border-zinc-950 animate-pulse" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-sm tracking-tight">Sai Ram Charan</h3>
+                  <h3 className="font-bold text-sm tracking-tight text-zinc-100">Sai Ram Charan</h3>
                   <p className="text-[10px] font-mono text-brand-400/80 uppercase tracking-widest">AI Engineer Mode</p>
                 </div>
               </div>

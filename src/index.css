@@ -41,6 +41,38 @@
     background-size: 40px 40px;
   }
 
+  .data-flow-line {
+    @apply absolute h-px bg-gradient-to-r from-transparent via-brand-500/50 to-transparent w-full;
+    animation: data-flow 8s linear infinite;
+  }
+
+  @keyframes data-flow {
+    0% { transform: translateY(-100vh); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+  }
+
+  .scanning-line {
+    @apply absolute inset-0 pointer-events-none overflow-hidden;
+  }
+  
+  .scanning-line::after {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-brand-500/20 to-transparent;
+    animation: scan 3s ease-in-out infinite;
+  }
+
+  @keyframes scan {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(200%); }
+  }
+
+  .neural-node {
+    @apply absolute w-1 h-1 bg-brand-500/40 rounded-full;
+    box-shadow: 0 0 10px var(--color-brand-500);
+  }
+
   .markdown-body {
     @apply text-zinc-300 leading-relaxed;
   }

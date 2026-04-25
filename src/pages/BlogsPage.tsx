@@ -12,7 +12,7 @@ export default function BlogsPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-brand-500/30">
+    <div className="min-h-screen">
       <Navbar />
       
       <main className="pt-32 pb-24 px-6 max-w-6xl mx-auto">
@@ -25,8 +25,8 @@ export default function BlogsPage() {
             <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
             Back to Portfolio
           </Link>
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-4 glow-text">Technical Insights</h1>
-          <p className="text-zinc-400 text-xl max-w-2xl">
+          <h1 className="text-3xl md:text-6xl font-bold tracking-tight mb-4 glow-text">Technical Insights</h1>
+          <p className="text-zinc-400 text-lg md:text-xl max-w-2xl">
             A collection of my thoughts on AI engineering, RAG systems, and my journey through the evolving landscape of LLMs.
           </p>
         </motion.div>

@@ -15,15 +15,26 @@ export const EXPERIENCES = [
   {
     company: "Digital Trust Technologies",
     role: "Software Engineer – AI & Backend",
-    period: "Feb 2023 – Present",
+    period: "Feb 2024 – Present",
     description: `– Designed and developed scalable backend systems using ASP.NET Core and FastAPI for API orchestration and AI-driven workflows.
-– Built and evolved LLM-powered chatbot systems into RAG-based pipelines using semantic and hierarchical chunking to improve response relevance.
+– Built and evolved LLM-powered chatbot systems into RAG-based pipelines using semantic and hierarchical chunking to significantly improve response relevance.
 – Improved retrieval accuracy using HyDE and enhanced context handling using conversational memory techniques such as sliding window and summarization.
-– Integrated backend APIs as structured tools (MCP-like approach) to enable agentic AI workflows for onboarding, validation, and task automation.
-– Developed voice-enabled AI interactions using Sarvam AI and improved system performance using Redis caching and efficient API design.
-– Built secure APIs with OAuth/OpenID Connect and implemented microservice monitoring systems to improve reliability and incident response.`,
-    skills: ["FastAPI", "ASP.NET Core", "RAG", "Agentic AI", "Redis", "OAuth", "Sarvam AI"],
+– Designed and implemented agentic AI workflows by integrating backend APIs as structured tools, enabling LLM-driven action execution for onboarding, validation, and automation.
+– Developed voice-enabled AI interactions and optimized system performance using Redis caching and efficient API design, improving latency and scalability.
+– Built secure APIs with OAuth/OpenID Connect and implemented microservice monitoring systems to improve system reliability and incident response time.
+– Automated operational workflows including reporting, monitoring, and recruitment pipelines using n8n workflows.`,
+    skills: ["FastAPI", "ASP.NET Core", "RAG", "Agentic AI", "Redis", "OAuth", "n8n"],
   },
+];
+
+export const LEADERSHIP = [
+  {
+    role: "Co-Founder",
+    organization: "Z444 – EdTech Platform",
+    description: `– Built a goal-driven learning platform with data-driven content delivery.
+– Developed mobile and backend systems using React Native and Node.js.
+– Applied ML-based user engagement logic to personalize learning pathways.`,
+  }
 ];
 
 export const EDUCATION = [
@@ -31,56 +42,47 @@ export const EDUCATION = [
     school: "BITS Pilani – WILP",
     degree: "M.Tech – Artificial Intelligence & Machine Learning",
     period: "2025 – Present",
+    gpa: "CGPA: 9.00",
   },
   {
     school: "SRKR Engineering College",
     degree: "B.Tech – Artificial Intelligence & Data Science",
     period: "2020 – 2024",
+    gpa: "CGPA: 9.24",
   }
 ];
 
 export const PROJECTS = [
   {
-    title: "Handwritten Calculator",
-    description: "An AI-powered calculator that recognizes and solves mathematical expressions from handwritten input using computer vision and deep learning.",
-    tech: ["Python", "TensorFlow", "OpenCV", "React Native"],
-    link: "#",
-    image: "https://picsum.photos/seed/handwritten-calc/800/600",
-  },
-  {
     title: "S.AI – Conversational AI with Long-Term Memory",
-    description: "Architected a conversational AI system with long-term memory using summarization-based context retention. Designed a FastAPI orchestration layer handling prompt routing and token optimization.",
-    tech: ["FastAPI", "LLM APIs", "Backend Systems"],
+    description: "Architected a conversational AI system with long-term memory using summarization-based context retention. Designed a FastAPI orchestration layer for prompt routing and token optimization. Enabled multi-turn dialogue with context-aware responses.",
+    tech: ["FastAPI", "LLM APIs", "Context Management"],
     link: "#",
-    image: "https://picsum.photos/seed/conversational-ai/800/600",
   },
   {
     title: "GitHub Repository RAG System",
-    description: "Developed a RAG system for natural language querying over code repositories. Parsed repository files and applied semantic chunking while preserving code structure.",
-    tech: ["FastAPI", "LLM APIs", "Vector DB"],
+    description: "Developed a RAG system for natural language querying over code repositories. Applied semantic chunking preserving code structure and generated code-aware embeddings for documentation and retrieval relevance.",
+    tech: ["FastAPI", "FAISS", "Semantic Chunking"],
     link: "#",
-    image: "https://picsum.photos/seed/code-rag/800/600",
   },
   {
     title: "YouTube Video RAG System",
-    description: "Built a RAG system for question-answering over YouTube videos using transcript extraction. Handled long-form content using chunking and token optimization.",
+    description: "Built a RAG system for question-answering over YouTube videos using transcript extraction. Processed transcripts into semantic chunks and designed prompt construction combining retrieved context and queries.",
     tech: ["FastAPI", "LLM APIs", "Vector DB"],
     link: "#",
-    image: "https://picsum.photos/seed/video-rag/800/600",
   },
 ];
 
 export const SKILLS = [
   { category: "Languages", items: ["Python", "C#", "SQL", "JavaScript", "TypeScript"] },
-  { category: "Generative AI", items: ["LLM APIs (OpenAI, Gemini, Groq, Ollama)", "RAG", "Prompt Engineering", "HyDE", "Semantic Chunking", "Hierarchical Chunking", "Conversational Memory", "Token Optimization"] },
-  { category: "Agentic AI", items: ["Tool Calling", "MCP-like Integration", "Workflow Automation"] },
+  { category: "Generative AI", items: ["LLM APIs (OpenAI, Gemini, Groq, Ollama)", "RAG", "Prompt Engineering", "HyDE", "Semantic/Hierarchical Chunking", "Conversational Memory", "Token Optimization"] },
+  { category: "Agentic AI", items: ["Tool Calling", "MCP-like Integration", "Workflow Automation (n8n)"] },
   { category: "ML / NLP", items: ["Scikit-learn", "TensorFlow", "NLP Pipelines", "Intent Classification", "Model Evaluation"] },
-  { category: "AI Infrastructure", items: ["Vector Databases", "Embeddings", "Similarity Search", "Streaming Inference"] },
+  { category: "AI Infrastructure", items: ["Vector Databases (FAISS)", "Embeddings", "Similarity Search", "Streaming Inference"] },
   { category: "Backend", items: ["FastAPI", "ASP.NET Core", "Node.js", "REST APIs", "API Orchestration"] },
   { category: "Frameworks", items: ["NumPy", "Pandas", "Matplotlib", "React Native"] },
-  { category: "Tools", items: ["Git", "GitHub", "Jupyter", "VS Code", "Postman", "Data Structure & Algorithms"] },
-  { category: "Cloud & DevOps", items: ["Azure", "Docker", "Github Actions"] },
-  { category: "Database", items: ["SQL", "PostgreSQL", "Redis", "MongoDB"] },
+  { category: "Tools", items: ["Git", "GitHub", "Jupyter", "VS Code", "Postman", "DSA"] },
+  { category: "Database", items: ["PostgreSQL", "MongoDB", "Redis"] },
 ];
 
 export const CERTIFICATIONS = [
